@@ -1,24 +1,4 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    10:22:07 04/15/2017 
-// Design Name: 
-// Module Name:    DigitLocker 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
-module locker_sub(
+module lock_sub(
     input wire [4:0] num,
     output reg [6:0] a_to_g
     );
@@ -56,7 +36,7 @@ module locker_sub(
         endcase
 endmodule
 
-module locker_top(
+module lock_top(
     input clk,
     input clr,
     input setting,
@@ -282,7 +262,7 @@ module locker_top(
             3'b11:num = display_3;
         endcase
 
-    locker_sub sub(
+    lock_sub sub(
         .num(num),
         .a_to_g(a_to_g)
     );
