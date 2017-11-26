@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Xilinx\DigitLocker\locker_top.ncd
-OUTFILE=C:\Xilinx\DigitLocker\locker_top.bit
-FAMILY=Spartan3E
-PART=xc3s100e-5cp132
-WORKINGDIR=C:\Xilinx\DigitLocker
-LICENSE=WebPack
-USER_INFO=211334778_0_0_378
